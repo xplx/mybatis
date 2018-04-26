@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foxwho.dao.CustomerHouseLocaleRecordMapper">
+  <resultMap id="BaseResultMap" type="com.foxwho.pojo.CustomerHouseLocaleRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="chr_Id" jdbcType="INTEGER" property="chrId" />
+    <result column="chr_CustomerId" jdbcType="INTEGER" property="chrCustomerid" />
+    <result column="chr_CheckState" jdbcType="TINYINT" property="chrCheckstate" />
+    <result column="chr_CheckAdmin" jdbcType="INTEGER" property="chrCheckadmin" />
+    <result column="chr_CheckCause" jdbcType="VARCHAR" property="chrCheckcause" />
+    <result column="chr_CheckTime" jdbcType="TIMESTAMP" property="chrChecktime" />
+    <result column="chr_CreateAdmin" jdbcType="INTEGER" property="chrCreateadmin" />
+    <result column="chr_CreateTime" jdbcType="TIMESTAMP" property="chrCreatetime" />
+    <result column="chr_Remark" jdbcType="VARCHAR" property="chrRemark" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.foxwho.pojo.CustomerHouseLocaleRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="chr_Picture" jdbcType="LONGVARCHAR" property="chrPicture" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    chr_Id, chr_CustomerId, chr_CheckState, chr_CheckAdmin, chr_CheckCause, chr_CheckTime, 
+    chr_CreateAdmin, chr_CreateTime, chr_Remark
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    chr_Picture
+  </sql>
+</mapper>

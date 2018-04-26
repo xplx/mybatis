@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foxwho.dao.CustomerAccountInfo1Mapper">
+  <resultMap id="BaseResultMap" type="com.foxwho.pojo.CustomerAccountInfo1">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="CAI_CustomerId" jdbcType="INTEGER" property="caiCustomerid" />
+    <result column="CAI_LineOfCredit" jdbcType="DECIMAL" property="caiLineofcredit" />
+    <result column="CAI_LineOfCreditHouse" jdbcType="DECIMAL" property="caiLineofcredithouse" />
+    <result column="CAI_GuaranteeQuota" jdbcType="DECIMAL" property="caiGuaranteequota" />
+    <result column="CAI_CashQuota" jdbcType="DECIMAL" property="caiCashquota" />
+    <result column="CAI_AvailableBalance" jdbcType="DECIMAL" property="caiAvailablebalance" />
+    <result column="CAI_FrozenCapital" jdbcType="DECIMAL" property="caiFrozencapital" />
+    <result column="CAI_CashLimit" jdbcType="TINYINT" property="caiCashlimit" />
+    <result column="CAI_NowLoanAmounts" jdbcType="DECIMAL" property="caiNowloanamounts" />
+    <result column="CAI_NotPaymentAmount" jdbcType="DECIMAL" property="caiNotpaymentamount" />
+    <result column="CAI_DelayAmount" jdbcType="DECIMAL" property="caiDelayamount" />
+    <result column="CAI_LoanAmounts" jdbcType="DECIMAL" property="caiLoanamounts" />
+    <result column="CAI_LoanCnt" jdbcType="INTEGER" property="caiLoancnt" />
+    <result column="CAI_RepPaymentCnt" jdbcType="INTEGER" property="caiReppaymentcnt" />
+    <result column="CAI_RepPaymentAmounts" jdbcType="DECIMAL" property="caiReppaymentamounts" />
+    <result column="CAI_OverdueCount" jdbcType="INTEGER" property="caiOverduecount" />
+    <result column="CAI_OverdueCount30" jdbcType="INTEGER" property="caiOverduecount30" />
+    <result column="CAI_OverdueCount90" jdbcType="INTEGER" property="caiOverduecount90" />
+    <result column="CAI_GoldBag" jdbcType="DECIMAL" property="caiGoldbag" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    CAI_CustomerId, CAI_LineOfCredit, CAI_LineOfCreditHouse, CAI_GuaranteeQuota, CAI_CashQuota, 
+    CAI_AvailableBalance, CAI_FrozenCapital, CAI_CashLimit, CAI_NowLoanAmounts, CAI_NotPaymentAmount, 
+    CAI_DelayAmount, CAI_LoanAmounts, CAI_LoanCnt, CAI_RepPaymentCnt, CAI_RepPaymentAmounts, 
+    CAI_OverdueCount, CAI_OverdueCount30, CAI_OverdueCount90, CAI_GoldBag
+  </sql>
+</mapper>
